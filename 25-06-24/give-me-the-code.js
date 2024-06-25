@@ -1,10 +1,9 @@
-function childrenOnly(array) {
-
+function jsFileOnly(data) {
   let result = []
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] < 18) {
-      result.push(array[i])
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].endsWith('.js')) {
+      result.push(data[i])
     }
   }
   return result
-}                                                                                 
+}
